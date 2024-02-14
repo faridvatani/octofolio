@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --main-color: #03a9f4;
-  --main-bg: #003147;
+  // Colors
+  --primary-color: #03a9f4;
+  --secondary-color: #ffc8c8;
+  --main-bg: #add8e6;
+  --sidebar-bg: #003147;
+  --white-color: #fff;
+  --dark-color: #333;
+  --title-color: #2a7da2;
+  --bg-percentage: #f0f0f0;
+
+  // Font
   --main-font: 'Poppins', sans-serif;
 }
 
@@ -18,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: lightblue;
+  background: var(--main-bg);
 }
 
 .container {
@@ -28,7 +37,7 @@ body {
   width: 100%;
   max-width: 1000px;
   min-height: 1000px;
-  background: #fff;
+  background: var(--white-color);
   margin: 50px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -38,7 +47,7 @@ body {
 .container .left_side {
   position: relative;
   padding: 40px;
-  background: var(--main-bg);
+  background: var(--sidebar-bg);
   transition: 0.5s;
 }
 
@@ -57,7 +66,7 @@ body {
   height: 200px;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid #fff;
+  border: 2px solid var(--white-color);
 }
 
 .profile_text .img_box img {
@@ -71,7 +80,7 @@ body {
 
 .profile_text h2 {
   position: relative;
-  color: #fff;
+  color: var(--white-color);
   font-size: 1.5em;
   margin-top: 20px;
   text-transform: uppercase;
@@ -92,7 +101,7 @@ body {
 }
 
 .title {
-  color: #fff;
+  color: var(--white-color);
   text-transform: uppercase;
   text-weight: 600;
   letter-spacing: 1px;
@@ -114,11 +123,11 @@ body {
   display: inline-block;
   width: 30px;
   font-size: 1.2em;
-  color: var(--main-color);
+  color: var(--primary-color);
 }
 
 .contact_info ul li span {
-  color: #fff;
+  color: var(--white-color);
   text-weight: 300;
 }
 
@@ -127,16 +136,16 @@ body {
 }
 
 .contact_info.education h5 {
-  color: var(--main-color);
+  color: var(--primary-color);
   font-weight: 500;
 }
 
 .contact_info.education h4:nth-child(2) {
-  color: #fff;
+  color: var(--white-color);
   font-weight: 500;
 }
 .contact_info.education h4 {
-  color: #fff;
+  color: var(--white-color);
   font-weight: 300;
 }
 
@@ -155,14 +164,14 @@ body {
   top: 0;
   left: 0;
   height: 100%;
-  background: var(--main-color);
+  background: var(--primary-color);
   border-radius: 5px;
 }
 
 .container .right_side {
   position: relative;
   padding: 40px;
-  background: #fff;
+  background: var(--white-color);
   transition: 0.5s;
 }
 
@@ -183,7 +192,7 @@ body {
 }
 
 p {
-  color: #333;
+  color: var(--dark-color);
 }
 
 .about .box {
@@ -203,7 +212,7 @@ p {
 }
 
 .about .box .text h4 {
-  color: #2a7da2;
+  color: var(--title-color);
   font-size: 1em;
   text-transform: uppercase;
 }
@@ -226,7 +235,7 @@ p {
   position: relative;
   width: 100%;
   height: 10px;
-  background: #f0f0f0;
+  background: var(--bg-percentage);
   border-radius: 5px;
 }
 
@@ -235,7 +244,7 @@ p {
   top: 0;
   left: 0;
   height: 100%;
-  background: var(--main-color);
+  background: var(--primary-color);
   border-radius: 5px;
 }
 
@@ -247,14 +256,14 @@ p {
 .interest ul li {
   position: relative;
   margin: 10px 0;
-  color: #333;
+  color: var(--dark-color);
   font-weight: 500;
   list-style: none;
 }
 
 .interest ul li i {
   font-size: 1.2em;
-  color: var(--main-color);
+  color: var(--primary-color);
   margin-right: 10px;
 }
 
