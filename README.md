@@ -1,5 +1,6 @@
 # Octofolio
 <img src="screenshot.png" align="center" alt="Octofolio Portfolio" /><br>
+
 Welcome to Octofolio! This is a repository for creating your own resume website using HTML and CSS.
 
 ## Introduction
